@@ -1,66 +1,78 @@
 export const site = {
-  name: "Kier Patrick Empang",
+  name: "Shari Mae Repdos",
   location: "Butuan City, Philippines",
-  tagline: "Software Engineer | Web Developer | UX/UI Designer",
+  tagline: " Researcher| Web Developer |UI Designer",
   /** Optional: URL to profile image (e.g. /avatar.jpg). Leave empty for initials placeholder. */
   avatarUrl: "" as string | undefined,
   /** Show verified checkmark next to name */
   verified: true,
   /** Optional: Facebook profile URL – verified badge links here when set */
   facebookUrl: "" as string | undefined,
-  email: "your@email.com",
+  email: "sharimae@gmail.com",
   calendlyUrl: "https://calendly.com/your-link",
   blogUrl: "https://blog.yoursite.com",
   linkedin: "https://linkedin.com/in/yourprofile",
-  github: "https://github.com/yourprofile",
+  github: "https://github.com/Bross Stack",
   instagram: "https://instagram.com/yourprofile",
 };
 
 export const heroBadges: { label: string; href: string; subtitle?: string }[] = [];
 
-export const about = `I am a full-stack software engineer with hands-on experience in end-to-end product development, from requirements gathering and system planning to implementation, optimization, and long-term maintenance. I am currently part of ISySS-CDM, a three-year project where I work as a senior programmer and take on key responsibilities in data gathering, software development, architecture design, and making sure the codebase remains efficient, scalable, and maintainable as the project grows.
+export const about = `I am a passionate Student Researcher and Developer based in Butuan City, dedicated to bridging the gap between environmental science and modern technology. My expertise lies at the intersection of field research and digital innovation, where I apply my skills in UI/UX design and web development to solve real-world problems.
 
-Beyond full-stack engineering, I also have a strong interest in immersive technologies and have previously contributed to a DOST-funded initiative, MARVELTechnologies, which focused on building AR/VR solutions through mining simulation use cases. That experience expanded my perspective on simulation-driven learning and interactive environments, and it strengthened my ability to design solutions across both traditional and emerging platforms.
+Currently, I am actively involved in environmental studies, specifically focusing on riparian classification and the impact of plastic pollution in local creek systems. This analytical background complements my technical proficiency in database management using PostgreSQL and full-stack development. 
 
-I also work on mobile development using React Native and Flutter, and I continue to broaden my technical focus through DevOps automation, workflow improvement, and AI-powered solutions that help teams deliver faster, smarter, and with greater consistency.`; 
+As a UI Designer, I prioritize creating intuitive and user-centric interfaces that make complex data accessible and engaging. Whether I am conducting field research on sediment accumulation or architecting a student enrollment system, my goal remains the same: to deliver data-driven solutions with a focus on efficiency, sustainability, and impactful design.`;
 
 export const experience = [
-  { role: "Senior Programmer", company: "ISySS-CDM CSU", year: "2026" },
-  { role: "Systems Analyst", company: "DA-BAFE ABEMIS3.0", year: "2025" },
-  { role: "Part Time Faculty", company: "CCIS-CSU", year: "2024" },
-  { role: "Evaluator", company: "FaMRIA, DA BAFE", year: "2024" },
-  {
-    role: "Master of Science in Information Tech",
-    company: "Caraga State University",
-    year: "2024",
-  },
-  { role: "Junior Developer", company: "MARVELTechnologies", year: "2022" },
-  { role: "Admin Staff", company: "OWWA Caraga", year: "2019-2022" },
-  { role: "BS Information Technology", company: "Caraga State University", year: "2019" },
-  { role: "Hello World", company: "Started my coding journey", year: "2015" },
+  { role: "Student Researcher", company: "Caraga State University", year: "2026" },
+  { role: "UI Designer / Web Developer", company: "Academic Projects", year: "2025" },
+  { role: "Field Data Analyst", company: "Environmental Science Study", year: "2026" },
 ];
 
+export const projects = [
+  { 
+    name: "Creek Microplastics Study", 
+    description: "Research on the condition of microplastics in local creeks.", 
+    url: "#", 
+    domain: "Environmental Science" 
+  },
+  { 
+    name: "Enrollment Management System", 
+    description: "A student database system built with PostgreSQL.", 
+    url: "#", 
+    domain: "Software Development" 
+  },
+];
 export const techStack = {
   frontend: [
-    "JavaScript",
-    "TypeScript",
     "React",
     "Next.js",
     "Tailwind CSS",
+    "Figma",
+    "TypeScript",
   ],
-  backend: ["Node.js", "Python", "PostgreSQL", "MongoDB"],
-  devops: ["AWS", "Docker", "Kubernetes", "GitHub Actions"],
+  backend: [
+    "PostgreSQL", 
+    "Node.js", 
+    "Python", 
+    "SQL"
+  ],
+ 
+  devops: [
+    "Field Data Collection",
+    "Riparian Assessment",
+    "Statistical Analysis",
+    "Technical Writing",
+  ],
   modeling: [
-    "3D Modeling",
-    "Blender",
-    "Animation",
-    "Texture Editing",
-    "Unity Game Engine",
-    "C#",
+    "Database Schema Design",
+    "ER Diagrams",
+    "UI/UX Prototyping",
   ],
 };
 
-export const projects = [
+export const project = [
   { name: "ISySS-CDM", description: "CSU & PNP collaborative system platform", url: "https://isyss-cdm.web.app/", domain: "isyss-cdm.web.app" },
   { name: "ABEMIS 3.0", description: "Agricultural & Biosystems Engineering Management Information System", url: "https://abemis-front.vercel.app/", domain: "abemis-front.vercel.app" },
   { name: "MARVEL Technologies", description: "AR/VR technology initiative and simulation platform", url: "https://chci.carsu.edu.ph/marvel-technologies/", domain: "chci.carsu.edu.ph" },
@@ -74,36 +86,50 @@ export const certifications: {
   year?: string;
 }[] = [
   {
-    name: "SPARK Technical Training for Blockchain Cryptocurrency Specialist Certification",
-    issuer: "Department of Information and Communications Technology",
+    name: "Environmental Data Analysis Workshop",
+    issuer: "Caraga State University",
     href: "#",
+    year: "2026",
   },
   {
-    name: "Coursera UX/UI Certification",
-    issuer: "Google",
+    name: "Foundations of User Experience (UX) Design",
+    issuer: "Google (Coursera)",
     href: "#",
+    year: "2025",
   },
   {
-    name: "Project Management",
-    issuer: "University of the Philippines",
+    name: "Database Management System (PostgreSQL) Specialist",
+    issuer: "Academic Certification",
     href: "#",
+    year: "2025",
   },
 ];
 
 export const recommendations = [
-  { quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.", author: "Cris Lawrence Adrian Militante", title: "ICT Director at GCM" },
-  { quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.", author: "Ken Gorro", title: "Senior Developer at Fullscale" },
-  { quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.", author: "Patrick Vince Velasco", title: "Software Engineer, YNS" },
-  { quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.", author: "John Edmerson Pizarra", title: "Jr. Full-stack Developer, PocketDevs" },
-  { quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.", author: "Glenn Pepito", title: "Professor at University of San Carlos" },
-  { quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.", author: "Van Honoridez", title: "Application Development Analyst at Accenture" },
-  { quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.", author: "Zinia Ma. Consuelo R. Trinidad", title: "Web Developer, Quickway Holdings Inc." },
-  { quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.", author: "Jomar Neri", title: "Full-stack Developer, Freelance" },
+  { 
+    quote: "Exhibited great attention to detail during our field research at the creek, especially in the classification of riparian zones and sediment analysis.", 
+    author: "Research Lead", 
+    title: "Environmental Science Department" 
+  },
+  { 
+    quote: "A very capable developer who successfully implemented a working enrollment database using PostgreSQL. Shows great potential in system architecture.", 
+    author: "IT Instructor", 
+    title: "College of Computing and Information Sciences" 
+  },
+  { 
+    quote: "The presentation on Lateral Plate Mesoderm was clear, concise, and very well-researched. One of the best reports in our biology class.", 
+    author: "Classmate / Peer Review", 
+    title: "Biological Science Student" 
+  },
 ];
 
 export const memberships = [
   {
-    name: "Philippine Society of IT Educators – Caraga Chapter",
+    name: "Philippine Society of IT Educators (PSITE) – Student Chapter",
     href: "https://psite.org/",
+  },
+  {
+    name: "CSU Environmental Research Group",
+    href: "#",
   },
 ];

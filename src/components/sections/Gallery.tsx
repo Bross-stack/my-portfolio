@@ -5,20 +5,24 @@ import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-const PLACEHOLDER_COUNT = 15;
+const galleryImages = [
+  "/Prof-1.jpg",
+  "/research and development meeting.png",
+  "/1sr system create.png"
+];
 
 export function Gallery() {
   const [startIndex, setStartIndex] = useState(0);
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const visibleCount = 5;
-  const maxStart = Math.max(0, PLACEHOLDER_COUNT - visibleCount);
+  const maxStart = Math.max(0, galleryImages.length - visibleCount);
 
   function prev() {
     setStartIndex((i) => (i <= 0 ? maxStart : i - 1));
   }
 
   function next() {
-    setStartIndex((i) => (i >= maxStart ? 0 : i + 1));
+    setStartIndex((i) => (i >= maxStart ? maxStart : i + 1));
   }
 
   return (
@@ -48,9 +52,17 @@ export function Gallery() {
                   )}
                   onClick={() => setActiveIndex(activeIndex === i ? null : i)}
                 >
-                  <div className="flex h-full w-full items-center justify-center bg-muted text-muted-foreground">
-                    <span className="text-xs font-medium">{i + 1}</span>
-                  </div>
+                  <div className="flex h-full w-full items-center justify-center bg-muted overflow-hidden relative">
+  {galleryImages[i] ? (
+    <img 
+      src={galleryImages[i]} 
+      alt={`Gallery item ${i + 1}`} 
+      className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
+    />
+  ) : (
+    <span className="text-xs font-medium text-muted-foreground">Empty Slot</span>
+  )}
+</div>
                 </Card>
               );
             })}

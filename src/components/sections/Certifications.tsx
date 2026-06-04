@@ -17,10 +17,22 @@ export function Certifications() {
             View All <ChevronRight className="inline-block h-3.5 w-3.5" />
           </Link>
         </div>S
-        <div className="flex flex-col gap-4 mt-4">
-  <img src="/Cert 1.png" alt="User Centric Design Certificate" className="w-full rounded-md border" />
-  <img src="/cert 2.png" alt="Environmental Analytics Certificate" className="w-full rounded-md border" />
-</div>
+        <div className="flex flex-col gap-2">
+      {certifications.map((cert) => (
+        <Link
+          key={cert.name}
+          href={cert.href}
+          target="_blank"
+          rel="noopener"
+          className="block rounded-md bg-muted/60 px-3 py-2 transition hover:bg-muted"
+        >
+          <p className="text-sm font-semibold text-foreground">{cert.name}</p>
+          <p className="mt-0.5 text-xs font-normal text-muted-foreground">
+            {cert.year ? `${cert.issuer} · ${cert.year}` : cert.issuer}
+          </p>
+        </Link>
+      ))}
+    </div>
       </div>
     </section>
   );

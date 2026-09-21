@@ -18,11 +18,11 @@ export const site = {
 
 export const heroBadges: { label: string; href: string; subtitle?: string }[] = [];
 
-export const about =  `I am a 4th-year Information Systems student from Butuan City, Philippines, with an interest in web development, programming, UI/UX design, and information systems.
+export const about =  `I am a 4th-year Information Systems student from Butuan City, Philippines, with an interest in web development, programming, UI/UX design, and information systems. I enjoy learning new technologies and creating practical digital solutions through hands-on projects.
 
-I enjoy learning new technologies and creating practical digital solutions through hands-on projects. I am continuously improving my skills in web development, database management, and user interface design.
+My hobbies include exploring new technologies, improving my programming skills, designing user interfaces, and working on creative digital projects. I also enjoy learning through school projects and collaborating with others.
 
-As an IT/IS student, my goal is to develop useful, user-friendly, and efficient systems that can help solve real-world problems.`;
+My academic background in Information Systems has helped me develop skills in web development, database management, UI/UX design, and system analysis. My goal is to build useful, user-friendly, and efficient systems that can help solve real-world problems.`;
 
 export const experience = [
   { role: "Student Researcher", company: "Caraga State University", year: "2026" },

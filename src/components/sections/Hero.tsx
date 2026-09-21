@@ -119,6 +119,13 @@ export function Hero() {
                 </Link>
               </Button>
               <Button asChild variant="outline" className="h-8 min-w-0 flex-1 gap-1 px-2 text-xs">
+                <Link href="#about" className="flex min-w-0 items-center justify-center gap-1">
+                 <BookOpen className="h-3 w-3 shrink-0" />
+                 <span className="truncate">Learn More</span>
+                 <ArrowRight className="h-3 w-3 shrink-0" />
+                 </Link>
+               </Button>
+              <Button asChild variant="outline" className="h-8 min-w-0 flex-1 gap-1 px-2 text-xs">
                 <Link href={`mailto:${site.email}`} className="flex min-w-0 items-center justify-center gap-1">
                   <Mail className="h-3 w-3 shrink-0" />
                   <span className="truncate">Send Email</span>

@@ -1,7 +1,7 @@
 export const site = {
   name: "Shari Mae Repdos",
   location: "Butuan City, Philippines",
-  tagline: " Researcher| Web Developer |UI Designer",
+  tagline: " IT/IS Student| Web Developer |UI Designer",
   /** Optional: URL to profile image (e.g. /avatar.jpg). Leave empty for initials placeholder. */
   avatarUrl: "" as string | undefined,
   /** Show verified checkmark next to name */
@@ -18,11 +18,11 @@ export const site = {
 
 export const heroBadges: { label: string; href: string; subtitle?: string }[] = [];
 
-export const about = `I am a passionate Student Researcher and Developer based in Butuan City, dedicated to bridging the gap between environmental science and modern technology. My expertise lies at the intersection of field research and digital innovation, where I apply my skills in UI/UX design and web development to solve real-world problems.
+export const about =  `I am a 4th-year Information Systems student from Butuan City, Philippines, with an interest in web development, programming, UI/UX design, and information systems.
 
-Currently, I am actively involved in environmental studies, specifically focusing on riparian classification and the impact of plastic pollution in local creek systems. This analytical background complements my technical proficiency in database management using PostgreSQL and full-stack development. 
+I enjoy learning new technologies and creating practical digital solutions through hands-on projects. I am continuously improving my skills in web development, database management, and user interface design.
 
-As a UI Designer, I prioritize creating intuitive and user-centric interfaces that make complex data accessible and engaging. Whether I am conducting field research on sediment accumulation or architecting a student enrollment system, my goal remains the same: to deliver data-driven solutions with a focus on efficiency, sustainability, and impactful design.`;
+As an IT/IS student, my goal is to develop useful, user-friendly, and efficient systems that can help solve real-world problems.`;
 
 export const experience = [
   { role: "Student Researcher", company: "Caraga State University", year: "2026" },
